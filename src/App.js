@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext, useEffect} from 'react';
+import {Provider} from 'react-translated'
+import {AppContext} from "./context/AppContext";
+import Translation from './components/Translate/Translate'
+import Header from './components/Header/Header'
+import Main from "./components/Main/Main";
+import {withRouter} from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(props) {
+    let contextData = useContext(AppContext);
+    let pathName = props.location.pathname;
+
+    let changeLanguageDetect = () => {
+        let newUrl = '';
+        if (pathName.includes('/en/')) {
+            newUrl = pathName.replace('/en/', '/' + contextData.state.language + '/');
+            props.history.push(newUrl)
+        }else if (pathName.includes('/de/')) {
+            newUrl = pathName.replace('/de/', '/' + contextData.state.language + '/');
+            props.history.push(newUrl)
+        }else if (pathName.includes('/fa/')) {
+            newUrl = pathName.replace('/fa/', '/' + contextData.state.language + '/');
+            props.history.push(newUrl)
+        }else if (pathName === '/') {
+            newUrl = '/' + contextData.state.language + '/';
+            props.history.push(newUrl)
+        }else {
+            newUrl = '/' + contextData.state.language + '/';
+            props.history.push(newUrl)
+        }
+    };
+
+    useEffect(() => {
+        changeLanguageDetect()
+    }, [contextData.state]);
+
+    return (
+        <Provider language={contextData.state.language} translation={Translation}>
+            <div className="App">
+                <Header/>
+                <Main/>
+                <Footer/>
+            </div>
+        </Provider>
+    );
 }
 
-export default App;
+export default withRouter(App);
