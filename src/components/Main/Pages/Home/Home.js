@@ -10,9 +10,9 @@ const Home = () => {
         <div className='Home'>
             <Title/>
             <OverView/>
-            {/*<div className='DownArrow'>*/}
-                {/*<img src={DownIco} alt="DownIco" className='DownIco'/>*/}
-            {/*</div>*/}
+            <div className='DownArrow'>
+                <img src={DownIco} alt="DownIco" className='DownIco'/>
+            </div>
 <GetStart/>
         </div>
     );

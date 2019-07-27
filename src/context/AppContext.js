@@ -20,7 +20,8 @@ export const AppProvider = props =>{
 
     const [state,setState] = useState({
         language: setLanguageOnLoad(),
-        navMenu : true
+        navMenu : true ,
+        refer : '4789121'
     });
 
     return(

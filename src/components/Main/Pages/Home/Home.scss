@@ -1,17 +1,19 @@
 .Home{
 position: relative;
+
   .DownArrow{
-    margin: auto;
     position: absolute;
     background-color: black;
     width: 50px;
     height: 50px;
     left: 50%;
-    bottom: -25px;
+    margin-top: -30px;
     transform: rotate(45deg) translate(-25%, 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .DownIco{
-      position: relative;
-      top: 25%;
+      position: absolute;
       left: 55%;
       transform: rotate(-45deg) translate(-60%, 0%);
 

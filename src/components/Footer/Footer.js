@@ -14,9 +14,9 @@ const Footer = () => {
     return (
         <div className='Footer'>
             <h4><Translate text='Download CryptoTab Directly'/></h4>
-            <a href="https://get.cryptobrowser.site/4789121" target='_blank' rel='next'> <img className='QRCode' src={QRCode} alt="QRCode"/></a>
-            <p>OR</p>
-            <a className='downloadExternal' href="https://get.cryptobrowser.site/4789121" target='_blank' rel='next'><Translate text='CLICK HERE TO DOWNLOAD'/></a>
+            <a href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel='next'> <img className='QRCode' src={QRCode} alt="QRCode"/></a>
+            <p><Translate text='Or'/> </p>
+            <a className='downloadExternal' href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel='next'><Translate text='CLICK HERE TO DOWNLOAD'/></a>
             <LanguageSelector/>
             <CopyRight/>
 

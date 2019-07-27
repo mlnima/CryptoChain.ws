@@ -6,11 +6,12 @@
   flex-direction: column;
 
 
-
   .NavItem {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
+    border-bottom: .2px solid black;
+    font-size: x-large;
 
     &:hover {
       color: red;
@@ -23,24 +24,21 @@
   }
 
 
-
 }
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
 
-  .Nav{
+  .Nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    background-image: linear-gradient(white, gray, white);
 
-    .NavItem{
-      padding: 0 20px;
+    .NavItem {
+      padding: 10px 20px;
+      border-bottom: none;
+      color: white;
     }
-
-
-
   }
-
-
 }

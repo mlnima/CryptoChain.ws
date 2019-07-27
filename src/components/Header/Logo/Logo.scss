@@ -5,26 +5,23 @@
   grid-area: Logo;
   a{
     img{
-      width: 100px;
+      width: 150px;
     }
   }
-  h1{
+  span{
     font-size: x-small;
   }
 }
-
-
-
 
 
 @media only screen and (min-width: 768px){
   .Logo{
     a{
       img{
-        width: 150px;
+        width: 250px;
       }
     }
-    h1{
+    span{
       font-size: small;
     }
   }

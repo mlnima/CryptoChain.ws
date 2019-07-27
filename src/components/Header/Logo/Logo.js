@@ -13,7 +13,7 @@ const Logo = () => {
     return (
         <div className='Logo'>
             <Link to={homePagePath}><img src={LogoImage} alt="Logo"/></Link>
-            <h1><Translate text='Easy Way To Earn Crypto Currency' /></h1>
+            <span><Translate text='Easy Way To Earn Crypto Currency' /></span>
         </div>
     );
 

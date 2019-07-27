@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+height: 60px;
+  padding: 20px 0;
   .mobileNavResponsive {
     display: flex;
     justify-content: flex-end;
@@ -14,10 +15,12 @@
   .menuBars {
     color: black;
     width: 30px;
+    font-size: xx-large;
     background-color: transparent;
     border: none;
     outline: none;
     grid-area: menuBars;
+    margin: 0 50px ;
   }
 
 }

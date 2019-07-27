@@ -1,13 +1,14 @@
 .Learn {
   width: 90%;
   margin: auto;
-  text-align: right;
+  //text-align: right;
   .downloadBtn{
     background-color: blue;
+    padding: 10px 20px ;
     color: white;
     text-decoration: none;
-    padding: 0 40px;
-    align-items: center;
+    margin: auto;
+    //align-items: center;
   }
   .img{
     width: 90%;

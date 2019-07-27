@@ -1,21 +1,17 @@
-import React,{useContext} from 'react';
+import React, {useContext} from 'react';
 import {AppContext} from "../../../../context/AppContext";
-import StartFa from "./StartFa/StartFa";
+import StartAndLearn from "./StartFa/StartAndLearn";
 
 
 const Start = () => {
-    let contextData = useContext(AppContext);
-    if (contextData.state.language === 'fa'){
-        return (
-            <div className='Home'>
-             <StartFa/>
-            </div>
-        );
-    } else return (
+
+
+    return (
         <div className='Home'>
-            <h2>Coming Soon</h2>
+            <StartAndLearn/>
         </div>
     );
+
 };
 
 export default Start;

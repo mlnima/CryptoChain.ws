@@ -41,7 +41,12 @@ function App(props) {
         }else {
             document.dir = 'ltr'
         }
+
     }, [contextData.state]);
+
+    setTimeout(()=>{
+        console.log(contextData.state.refer)
+    },2000)
 
     return (
         <Provider language={contextData.state.language} translation={Translation}>
