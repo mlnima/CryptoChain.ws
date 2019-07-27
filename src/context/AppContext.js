@@ -19,7 +19,8 @@ export const AppProvider = props =>{
      };
 
     const [state,setState] = useState({
-        language: setLanguageOnLoad()
+        language: setLanguageOnLoad(),
+        navMenu : true
     });
 
     return(

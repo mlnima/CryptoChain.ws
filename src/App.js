@@ -6,6 +6,8 @@ import Header from './components/Header/Header'
 import Main from "./components/Main/Main";
 import {withRouter} from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import './App.scss'
+import Nav from "./components/Nav/Nav";
 
 function App(props) {
     let contextData = useContext(AppContext);
@@ -31,14 +33,21 @@ function App(props) {
         }
     };
 
+
     useEffect(() => {
         changeLanguageDetect()
+        if (contextData.state.language === 'fa'){
+            document.dir = 'rtl'
+        }else {
+            document.dir = 'ltr'
+        }
     }, [contextData.state]);
 
     return (
         <Provider language={contextData.state.language} translation={Translation}>
             <div className="App">
                 <Header/>
+                <Nav/>
                 <Main/>
                 <Footer/>
             </div>

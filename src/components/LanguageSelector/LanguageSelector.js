@@ -2,29 +2,23 @@ import React, {useContext} from 'react';
 import './LanguageSelector.scss'
 import {AppContext} from "../../context/AppContext";
 import {withRouter} from "react-router-dom";
-import IrFlag from './Flags/ir.svg'
-import DeFlag from './Flags/de.svg'
-import UsFlag from './Flags/us.svg'
+
 
 const LanguageSelector = () => {
 
     let contextData = useContext(AppContext);
 
-    let onSelectFlag = (e) => {
-        let language = e.target.getAttribute('alt');
-
-        contextData.setState({
-            ...contextData.state,
-            language: language
-        });
+    let changeHandler = (e) =>{
+            contextData.setState({
+                ...contextData.state,
+                language: e.target.value
+            });
     };
-
     return (
-        <div className='LanguageSelector'>
-            <img src={IrFlag} alt='fa' onClick={onSelectFlag}/>
-            <img src={DeFlag} alt='de' onClick={onSelectFlag}/>
-            <img src={UsFlag} alt='en' onClick={onSelectFlag}/>
-        </div>
+            <select className='LanguageSelector' onChange={changeHandler} value={contextData.state.language}>
+                <option value='en'>English</option>
+                <option value='fa'>فارسی</option>
+            </select>
     );
 };
 

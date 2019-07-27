@@ -1,0 +1,19 @@
+$color1 : #FF9500 ;
+
+
+@mixin colorLink {
+  background-color: $color1;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+@mixin overViewDivs {
+
+
+}
+
+
+
+

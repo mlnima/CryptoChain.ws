@@ -3,9 +3,9 @@ import Router from "../Router";
 
 const Main = () => {
     return (
-        <div>
+        <React.Fragment>
              <Router/>
-        </div>
+        </React.Fragment>
     );
 };
 

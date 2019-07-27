@@ -1,0 +1,46 @@
+.Nav {
+  grid-area: Nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+
+  .NavItem {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+
+    &:hover {
+      color: red;
+      font-weight: bold;
+    }
+
+    &:active {
+      color: pink;
+    }
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 768px){
+
+  .Nav{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .NavItem{
+      padding: 0 20px;
+    }
+
+
+
+  }
+
+
+}

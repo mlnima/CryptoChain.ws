@@ -1,6 +1,28 @@
 .Footer{
   background-color: black;
+  background-image: url("../../images/footer-bg.svg");
   color: white;
   text-align: center;
   border-top:solid .2px white ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .QRCode{
+    width: 100px;
+  }
+
+  .downloadExternal{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Footer{
+    background-image: url("../../images/footer-bg.svg");
+  }
 }

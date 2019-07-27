@@ -1,0 +1,62 @@
+@import "../../../../Styles/functions";
+
+.OverView {
+  background-image: url("../../../../images/overview-mob.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 400px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-top: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .overViewItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      color: $color1;
+    }
+
+    .overViewItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      height: 106px;
+      width: 290px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .OverView {
+    background-image: url("../../../../images/overview-bg.svg");
+    flex-direction: row;
+    justify-content: center;
+
+    .overViewItems {
+      flex-direction: row;
+      .overViewItem {
+        height: 200px;
+        width: 200px;
+        margin: 0 20px;
+      }
+    }
+  }
+
+}
