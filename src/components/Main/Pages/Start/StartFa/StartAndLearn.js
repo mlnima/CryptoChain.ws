@@ -23,15 +23,13 @@ const StartAndLearn = () => {
 
             <p><Translate text='the only thing you need to do is to let your Desktop Browser or Smartphone stay Connect '/></p>
             <h2><Translate text='first, go to the link below'/></h2>
-            <a className='downloadBtn' href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel='next'>
-                <Translate text='Download Now'/>
-             </a>
+            <a className='downloadBtn' href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel='next'><Translate text='Download Now'/></a>
             <br/>
             <a href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel='next'>
                 <img className='img' src={downloadImage()} alt="دانلود"/>
             </a>
             <p> <Translate text='after installation open the Software'/></p>
-            <h2>     <Translate text='Download Now'/></h2>
+
             <StartFaPreview/>
         </div>
     );

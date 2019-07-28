@@ -20,7 +20,6 @@ const OverView = () => {
                 <div className="">
                     <h2><Translate text='Get a quick overview for'/></h2>
                 </div>
-
                 <div className="overViewItems">
                     <div className="Individuals overViewItem">
                         <img src={IndividualsIco} alt=""/>
@@ -32,7 +31,7 @@ const OverView = () => {
                     </div>
                     <div className="Developers overViewItem">
                         <img src={DevelopersIco} alt=""/>
-                        <p><Translate text='Businesses'/></p>
+                        <p><Translate text='Developers'/></p>
                     </div>
                 </div>
             </div>
