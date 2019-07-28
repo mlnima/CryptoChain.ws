@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {AppProvider} from "./context/AppContext";
 import {BrowserRouter} from "react-router-dom";
+//import ReactDOMServer from 'react-dom/server';
 
 ReactDOM.render(
     <AppProvider>

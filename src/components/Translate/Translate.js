@@ -1,3 +1,6 @@
+import React from "react";
+import {Translate} from "react-translated";
+
 export default {
 
     'Welcome': {
@@ -142,6 +145,31 @@ export default {
     'Referral Link, which you can share it with your Friend and Make a lot of Money': {
         en: 'Referral Link, which you can share it with your Friend and Make a lot of Money',
         fa: 'از همه مهم تر لینکی که با دادن اون به دوستانتون میتونید اون ها رو به عنوان زیر مجموعه خودتون به سیستم معرفی کنید',
+    },
+    'Chrome-based browsing experience': {
+        en: 'Chrome-based browsing experience',
+        fa: 'طراحی شده با هسته اصلی مرور گر کروم با محیط شبیه',
+    },
+    'Built-in CryptoTab mining features': {
+        en: 'Built-in CryptoTab mining features',
+        fa: 'سیستم استخراج بیتکون در داخل خود مرورگر',
+    },
+    'Sync everything across multiple devices': {
+        en: 'Sync everything across multiple devices',
+        fa: 'همگام بودن اطلاعات در داخل تمام دستگاه ها ',
+    },
+    'Blazing fast and lightweight browser': {
+        en: 'Blazing fast and lightweight browser',
+        fa: 'یکی از سریع ترین مرورگر های حال هزار در جهان  ',
+    },
+
+    'Watch brief explanation video': {
+        en: 'Watch brief explanation video',
+        fa: 'برای اطلاعات بهتر این ویدئو را تماشا کنید',
+    },
+    'Watch this short promo video to learn more about how CryptoTab works': {
+        en: 'Watch this short promo video to learn more about how CryptoTab works',
+        fa: 'این ویدئو کوتاه رو تماشا کنید تا در مورد این سیستم اطلاعات بهتری بدست بیارید ',
     },
 
 }

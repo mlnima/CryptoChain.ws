@@ -2,13 +2,14 @@
   border: none;
   outline: none;
   font-size: large;
-  padding: 10px;
+  padding: 5px;
 }
 @media only screen and (min-width: 768px){
 
   .LanguageSelector{
      display: inherit;
     margin: 50px;
+    font-size: medium;
 
   }
 

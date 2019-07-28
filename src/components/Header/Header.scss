@@ -20,7 +20,9 @@ height: 60px;
     border: none;
     outline: none;
     grid-area: menuBars;
-    margin: 0 50px ;
+    margin: 0 40px ;
+    display: flex;
+    justify-content: center;
   }
 
 }

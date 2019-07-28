@@ -1,4 +1,4 @@
-import React, {useState, useEffect , useContext} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 
 
 import Logo from "./Logo/Logo";
@@ -43,7 +43,7 @@ const Header = () => {
         <div className='Header'>
             <Logo/>
             <LanguageSelector/>
-                <button onClick={onClickHandler} className='menuBars'><i className="fas fa-bars"/></button>
+            <button onClick={onClickHandler} className='menuBars'><i className="fas fa-bars"/></button>
 
         </div>
     );
