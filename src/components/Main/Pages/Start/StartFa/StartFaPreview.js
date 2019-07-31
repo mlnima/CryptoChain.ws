@@ -17,13 +17,13 @@ const StartFaPreview = () => {
             correctImage = WebPreview
         }
         return (
-            <img className='img' src={correctImage} alt="MobilePreview"/>
+            <img className='deviceImg img' src={correctImage} alt="MobilePreview"/>
         )
     };
 
 
         return (
-            <div>
+            <div className='StartFaPreview'>
                 <SetCorrectImage/>
                 <h3>1 . <Translate text='Login to account page'/> </h3>
                 <h3>2 . <Translate text='Mining Bitcoin by using your Device'/> </h3>

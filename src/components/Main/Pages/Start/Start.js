@@ -1,10 +1,7 @@
-import React, {useContext} from 'react';
-import {AppContext} from "../../../../context/AppContext";
+import React from 'react';
 import StartAndLearn from "./StartFa/StartAndLearn";
 
-
 const Start = () => {
-
 
     return (
         <div className='Home'>

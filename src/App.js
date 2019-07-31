@@ -44,9 +44,6 @@ function App(props) {
 
     }, [contextData.state]);
 
-    setTimeout(()=>{
-        console.log(contextData.state.refer)
-    },2000)
 
     return (
         <Provider language={contextData.state.language} translation={Translation}>

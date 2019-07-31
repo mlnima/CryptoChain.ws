@@ -1,0 +1,15 @@
+.StartFaPreview{
+  .deviceImg{
+    width: 80%;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .StartFaPreview{
+    .deviceImg{
+      width: 50%;
+    }
+  }
+}

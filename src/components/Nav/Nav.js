@@ -1,9 +1,8 @@
-import React,{useContext,useState} from 'react';
+import React,{useContext} from 'react';
 import {NavLink} from "react-router-dom";
 import './Nav.scss'
 import {Translate} from "react-translated";
 import {AppContext} from "../../context/AppContext";
-import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 const Nav = () => {
 

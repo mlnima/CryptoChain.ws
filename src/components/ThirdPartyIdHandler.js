@@ -11,8 +11,10 @@ const ThirdPartyIdHandler = (props) => {
             ...contextData.state,
             refer: referID
         });
-    }, []);
-    props.history.push('/' + contextData.state.language);
+    }, );
+
+    localStorage.setItem('refer',referID);
+    props.history.push('/' + contextData.state.language + '/start' );
 
     return (
         <div>

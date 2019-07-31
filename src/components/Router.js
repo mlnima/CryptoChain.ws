@@ -11,7 +11,6 @@ const Router = () => {
             <Route exact path='/:lang' component={Home}/>
             <Route exact path='/:lang/start' component={Start}/>
             <Route exact path='/:lang/id/:id' component={ThirdPartyIdHandler}/>
-
         </div>
     );
 };

@@ -2,15 +2,29 @@
   width: 90%;
   margin: auto;
   //text-align: right;
+h1{
+  text-align: center;
+}
   .devicesImage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-image: url('../../../../../images/bitcoin-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    //background-color: black;
     border-radius: 10px;
     padding: 5px;
 
+    .WindowsMac , .iphoneAndroid{
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px;
+      width: 250px;
+
+    }
     .AllBrowserScreenshot {
       width: 100%;
       max-width: 600px;
@@ -34,12 +48,14 @@
       align-items: center;
       flex-direction: column;
       position: relative;
+
       img {
         width: 40px;
         height: 40px;
       }
+
       p {
-        width:200px;
+        width: 200px;
         font-size: small;
       }
     }
@@ -52,16 +68,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(gray 5%,gray,white, white, white);
+    //background-image: linear-gradient(gray 5%, gray, white, white, white);
+    background-image: url('../../../../../images/bitcoin-background2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     text-align: center;
 
     h2 {
-
+      background-color: rgba(0,0,0,0.7);
+      border-radius: 20px;
+      padding: 10px;
     }
 
     p {
       max-width: 80%;
+      background-color: rgba(0,0,0,0.7);
+      padding: 10px;
+      border-radius: 20px;
     }
 
     iframe {
@@ -80,9 +106,19 @@
     //align-items: center;
   }
 
-  .img {
-    width: 90%;
-    padding-top: 50px;
+
+
+
+
+  .howTo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .img {
+      width: 90%;
+      padding-top: 50px;
+    }
   }
 }
 
@@ -90,6 +126,7 @@
 @media only screen and (min-width: 768px) {
 
   .Learn {
+
     .infos {
       flex-direction: row;
       align-items: center;
@@ -101,8 +138,9 @@
         align-items: center;
         flex-direction: column;
         border-right: solid .2px gray;
-        p{
-max-width: 150px;
+
+        p {
+          max-width: 150px;
         }
       }
     }
@@ -113,6 +151,14 @@ max-width: 150px;
         height: 400px;
       }
     }
+    .howTo{
+      .img {
+
+        width: 90%;
+        padding-top: 50px;
+      }
+    }
+
   }
 
 }

@@ -1,5 +1,3 @@
-import React from "react";
-import {Translate} from "react-translated";
 
 export default {
 
@@ -160,7 +158,7 @@ export default {
     },
     'Blazing fast and lightweight browser': {
         en: 'Blazing fast and lightweight browser',
-        fa: 'یکی از سریع ترین مرورگر های حال هزار در جهان  ',
+        fa: 'یکی از سریع ترین مرورگر های حال حاظر در جهان  ',
     },
 
     'Watch brief explanation video': {

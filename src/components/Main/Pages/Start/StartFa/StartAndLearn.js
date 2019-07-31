@@ -60,22 +60,27 @@ const StartAndLearn = () => {
                 <h2><Translate text='Watch brief explanation video'/></h2>
                 <p><Translate text='Watch this short promo video to learn more about how CryptoTab works'/></p>
                 <iframe
+                    title='youtube'
                     src="https://www.youtube.com/embed/YzqCO-sg7_U?autoplay=0&amp;mute=0&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;playlist=XqwaHWawdAA,c4lvBHSOdwQ,yAUrzAyOCnw,VBLeFwaShjA,5r69hh6ARvA,omzb6X8VeOM,xN0IdF4ILp0"
-                    frameBorder="0" allowFullScreen="allow" __idm_frm__="auto" __idm_id__="159798273"/>
+                    frameBorder="0" allowFullScreen="allow" rel="noopener noreferrer" />
             </div>
 
-            <p><Translate
-                text='the only thing you need to do is to let your Desktop Browser or Smartphone stay Connect '/></p>
-            <h2><Translate text='first, go to the link below'/></h2>
-            <a className='downloadBtn' href={`https://get.cryptobrowser.site/${contextData.state.refer}`}
-               target='_blank' rel='next'><Translate text='Download Now'/></a>
-            <br/>
-            <a href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel='next'>
-                <img className='img' src={downloadImage()} alt="دانلود"/>
-            </a>
-            <p><Translate text='after installation open the Software'/></p>
+            <div className='howTo'>
+                <p><Translate
+                    text='the only thing you need to do is to let your Desktop Browser or Smartphone stay Connect '/></p>
+                <h2><Translate text='first, go to the link below'/></h2>
+                <a className='downloadBtn' href={`https://get.cryptobrowser.site/${contextData.state.refer}`}
+                   target='_blank' rel="noopener noreferrer"><Translate text='Download Now'/></a>
+                <br/>
+                <a href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel="noopener noreferrer">
+                    <img className='img' src={downloadImage()} alt="دانلود"/>
+                </a>
+                <p><Translate text='after installation open the Software'/></p>
 
-            <StartFaPreview/>
+                <StartFaPreview/>
+            </div>
+
+
         </div>
     );
 };

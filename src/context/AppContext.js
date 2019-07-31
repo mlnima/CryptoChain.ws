@@ -1,8 +1,9 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 
 export const AppContext = React.createContext();
 export const AppProvider = props =>{
      let pathName = window.location.pathname;
+
 
      let setLanguageOnLoad =()=>{
          let lang = 'en';
@@ -18,12 +19,23 @@ export const AppProvider = props =>{
          return lang
      };
 
+
+     let setReferCode = ()=>{
+         let refer;
+         if (localStorage.refer) {
+             refer = localStorage.refer;
+
+         }else{
+             refer = '4789121';
+         }
+         return refer
+     };
+
     const [state,setState] = useState({
         language: setLanguageOnLoad(),
         navMenu : true ,
-        refer : '4789121'
+        refer : setReferCode()
     });
-
     return(
         <div>
             <AppContext.Provider value={{state,setState}}>

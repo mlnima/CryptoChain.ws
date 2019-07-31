@@ -1,19 +1,11 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import './OverView.scss'
-import {AppContext} from "../../../../context/AppContext";
-import {Link} from "react-router-dom";
 import {Translate} from "react-translated";
 import BusinessIco from '../../../../images/ico_business.svg'
 import IndividualsIco from '../../../../images/ico_individuals.svg'
 import DevelopersIco from '../../../../images/ico_developers.svg'
 
 const OverView = () => {
-
-    let contextData = useContext(AppContext);
-
-
-
-
 
         return (
             <div className='OverView'>
