@@ -49,7 +49,7 @@ function App(props) {
         <Provider language={contextData.state.language} translation={Translation}>
             <div className="App">
                 <Header/>
-                <Nav/>
+                {/*<Nav/>*/}
                 <Main/>
                 <Footer/>
             </div>

@@ -3,10 +3,15 @@
   outline: none;
   font-size: large;
   padding: 5px;
+  grid-area: LanguageSelector;
+  max-width: 100px;
+
 }
 @media only screen and (min-width: 768px){
 
   .LanguageSelector{
+    //background-image: linear-gradient(white, gray, white);
+    color: blue;
      display: inherit;
     margin: 50px;
     font-size: medium;

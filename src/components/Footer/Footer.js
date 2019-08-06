@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React, {useContext} from 'react';
 import CopyRight from "./CopyRight";
 import './Footer.scss';
 import QRCode from '../../images/qrcode.png'
@@ -11,21 +11,23 @@ const Footer = () => {
     let contextData = useContext(AppContext);
 
 
-    let Barcode = () =>{
+    let Barcode = () => {
         if (contextData.state.refer === '4789121') {
-            return(
+            return (
                 <React.Fragment>
-                <a href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel="noopener noreferrer"> <img className='QRCode' src={QRCode} alt="QRCode"/></a>
-                <p><Translate text='Or'/> </p>
+                    <a href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank'
+                       rel="noopener noreferrer"> <img className='QRCode' src={QRCode} alt="QRCode"/></a>
+                    <p><Translate text='Or'/></p>
                 </React.Fragment>
             )
-        }else return null
+        } else return null
     }
     return (
         <div className='Footer'>
             <h4><Translate text='Download CryptoTab Directly'/></h4>
-<Barcode/>
-            <a className='downloadExternal' href={`https://get.cryptobrowser.site/${contextData.state.refer}`} target='_blank' rel="noopener noreferrer"><Translate text='CLICK HERE TO DOWNLOAD'/></a>
+            <Barcode/>
+            <a className='downloadExternal' href={`https://get.cryptobrowser.site/${contextData.state.refer}`}
+               target='_blank' rel="noopener noreferrer"><Translate text='CLICK HERE TO DOWNLOAD'/></a>
             <LanguageSelector/>
             <CopyRight/>
 

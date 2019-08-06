@@ -1,39 +1,31 @@
 .Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-height: 60px;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+  //height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'Logo  LanguageSelector .';
+  grid-gap: 20px 0;
   padding: 20px 0;
+position: relative;
   .mobileNavResponsive {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     width: 100%;
-
   }
-
-  .menuBars {
-    color: black;
-    width: 30px;
-    font-size: xx-large;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    grid-area: menuBars;
-    margin: 0 40px ;
-    display: flex;
-    justify-content: center;
-  }
-
 }
 
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
 
   .Header {
-    .menuBars {
-      display: none;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'Logo . Nav LanguageSelector';
+    justify-content: center;
+    align-items: center;
+
   }
 
 }
+
